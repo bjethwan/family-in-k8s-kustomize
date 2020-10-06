@@ -4,7 +4,7 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/app-root: /
     name: family-bipin
-    namespace: family
+    namespace: family-kustomize
 spec:
   rules:
   - host: family-bipin.k8s1.bjethwan.xyz

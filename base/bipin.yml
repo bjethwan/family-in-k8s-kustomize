@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: bipin
-  namespace: family
+  namespace: family-kustomize
 spec:
   replicas: 1
   selector:
