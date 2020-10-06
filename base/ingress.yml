@@ -7,7 +7,7 @@ metadata:
   namespace: family-kustomize
 spec:
   rules:
-  - host: family-bipin.k8s1.bjethwan.xyz
+  - host: family-bipin-prod.k8s1.bjethwan.xyz
     http:
       paths:
       - backend:
