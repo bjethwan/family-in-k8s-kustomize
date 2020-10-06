@@ -4,4 +4,4 @@ data:
 kind: ConfigMap
 metadata:
   name: bipin
-  namespace: family
+  namespace: family-kustomize
