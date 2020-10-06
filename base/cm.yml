@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bipin
+  namespace: family
+data:
+  message: "<h1 style=\"color:Tomato;\"> Bipin Jethwani</h1>"

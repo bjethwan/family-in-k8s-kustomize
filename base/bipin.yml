@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bipin
+  namespace: family
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: bipin
+  template:
+    metadata:
+      labels:
+        name: bipin
+    spec:
+      containers:
+      - name: bipin
+        image: nginx
+        volumeMounts:
+          - name: html
+            mountPath: /usr/share/nginx/html/
+      volumes:
+        - name: html
+          configMap:
+            name: bipin
+            items:
+              - key: message
+                path: index.html
